@@ -27,7 +27,7 @@ import LoginScreen from "./src/login/LoginScreen";
 import BillScreen from "./src/BillDue";
 import { UserProvider } from "./src/context/UserContext";
 import { SessionProvider, useSession } from "./src/context/SessionContext";
-
+import AuthScreen frm "./src/auth/AuthScreen";
 const AppContent = () => {
   const { session, saveSession, isReady } = useSession();
 
@@ -37,7 +37,7 @@ const AppContent = () => {
   }
 
   if (!session) {
-    return <LoginScreen onLoginSuccess={saveSession} />;
+    return <AuthScreen onLoginSuccess={saveSession} />;
   }
 
   const [selectedPage, setSelectedPage] = useState("dashboard");
