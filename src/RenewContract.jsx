@@ -11,7 +11,7 @@ import {
   Alert,
   Platform,
 } from "react-native";
-import DocumentPicker from "react-native-document-picker";
+import * as DocumentPicker from '@react-native-documents/picker';
 import GreetingCard from "./GreetingCard";
 import { API_BASE_URL, getFinalBillRequest } from "./apiConfig";
 import { useSession } from "./context/SessionContext";

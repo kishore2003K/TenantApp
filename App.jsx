@@ -23,11 +23,11 @@ import Bill from "./src/BillHistory";
 import Payment from "./src/Payment";
 import PaymentHistory from "./src/PaymentHistory";
 import RaiseTicket from "./src/RaiseTicket";
-import LoginScreen from "./src/login/LoginScreen";
 import BillScreen from "./src/BillDue";
 import { UserProvider } from "./src/context/UserContext";
 import { SessionProvider, useSession } from "./src/context/SessionContext";
-import AuthScreen frm "./src/auth/AuthScreen";
+import AuthScreen from "./src/auth/AuthScreen";
+
 const AppContent = () => {
   const { session, saveSession, isReady } = useSession();
 
